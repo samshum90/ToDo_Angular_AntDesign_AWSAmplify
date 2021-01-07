@@ -1,0 +1,19 @@
+<div class="form-body">
+    <form nz-form autocomplete="off" [formGroup]="createForm" (ngSubmit)="onCreate(createForm.value)">
+        <nz-form-item>
+            <nz-form-label [nzSpan]="7" nzFor="name">Name: </nz-form-label>
+            <nz-form-control [nzSpan]="12">
+                <input type="text" formControlName="name" autocomplete="off">
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label [nzSpan]="7" nzFor="description">Description: </nz-form-label>
+            <nz-form-control [nzSpan]="12">
+                <input type="text" formControlName="description" autocomplete="off">
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-control [nzOffset]="7" [nzSpan]="12">
+            <button nz-button nzType="primary">Submit</button>
+        </nz-form-control>
+    </form>
+</div>
